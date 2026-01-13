@@ -4,10 +4,13 @@
             gap: 5px;
         }
 
-        input {
-            width: 60px;
+        .result {
+            width: 50px;
+            height: 28px;
             text-align: center;
             font-size: 16px;
+            border: 1px solid #9c9393;
+            border-radius: 4px;
         }
 
         button {

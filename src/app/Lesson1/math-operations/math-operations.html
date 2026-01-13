@@ -1,0 +1,18 @@
+<div class="calculator">
+  <h3 class="title">Calculator</h3>
+
+  <input type="number" #son1 placeholder="Son 1" [(ngModel)]="number1">
+  <input type="number" #son2 placeholder="Son 2" [(ngModel)]="number2">
+
+  <div class="buttons">
+    <button class="op-btn" (click)="add()">+</button>
+    <button class="op-btn" (click)="subtract()">-</button>
+    <button class="op-btn" (click)="multiply()">*</button>
+    <button class="op-btn" (click)="divide()">/</button>
+  </div>
+  <hr>
+
+  <div class="result">
+    Natija: <span>{{ result }}</span>
+  </div>
+</div>

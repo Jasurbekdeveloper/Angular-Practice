@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './my-button.html',
   styleUrl: './my-button.css',
 })
-export class MyButton {
+export class IncrementButton {
  
   count = 0;
   decrement() {

@@ -1,10 +1,12 @@
 import { Component, signal } from '@angular/core';
-import { MyButton } from './my-button/my-button';
-import { MathOperations } from './math-operations/math-operations';
+import { IncrementButton } from './Lesson1/increment_button/my-button';
+import { MathOperations } from './Lesson1/math-operations/math-operations';
+import { StudentList } from './Lesson2/student-list/student-list';
+import { LoginPage } from './Lesson2/login-page/login-page';
 
 @Component({
   selector: 'app-root',
-  imports: [MyButton, MathOperations],
+  imports: [IncrementButton, MathOperations,StudentList,LoginPage],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

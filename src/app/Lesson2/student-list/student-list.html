@@ -1,0 +1,33 @@
+<div class="student-list">
+  <div>
+    <h2>Studentlar ro'yxati</h2>
+  </div>
+    <div>
+       <input type="text" placeholder="Ism qo'shish" [(ngModel)]="name" />
+       <input type="number" placeholder="Ball qo'shish" [(ngModel)]="grade" />
+       <button (click)="addStudent(name, grade)">Qo'shish</button>
+    </div>
+    <table>
+  <thead>
+    <tr>
+      <th>T/r</th>
+      <th>Ism</th>
+      <th>Ball</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (student of students; track student.id; let i = $index) {
+      <tr>
+        <td>{{ i + 1 }}</td>
+        <td>{{ student.name }}</td>
+        <td [style.color]="student.grade >= 90 ? 'green' : student.grade >= 60 ? 'orange' : 'red'">{{ student.grade }}</td>
+        <td><button (click)="deleteStudent(student.id)">O'chirish</button></td>
+      </tr>
+    }@empty {
+        <p>Not found students</p>
+    }
+  </tbody>
+</table>
+
+</div>

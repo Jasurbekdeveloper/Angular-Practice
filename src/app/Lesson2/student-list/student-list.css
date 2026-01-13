@@ -1,0 +1,90 @@
+.student-list {
+  width: 600px;
+  margin: 50px auto;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  background-color: #f9f9f9;
+
+}
+.student-list h2 {
+  text-align: center;
+    margin-left: 35%;
+}
+
+/* Input va button container */
+.student-list > div {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.student-list input[type="text"],
+.student-list input[type="number"] {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+
+
+/* Button qo'shish */
+.student-list button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #4a90e2;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.student-list button:hover {
+  background-color: #357ABD;
+}
+
+/* Table styling */
+.student-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-list th,
+.student-list td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Header */
+.student-list th {
+  background-color: #4a90e2;
+  color: white;
+}
+
+/* Row hover effect */
+.student-list tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+.student-list tbody button {
+  padding: 5px 10px;
+  background-color: #dc2626;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Empty state */
+.student-list tbody .empty {
+  text-align: center;
+  color: #6b7280; /* gray */
+  font-style: italic;
+}
