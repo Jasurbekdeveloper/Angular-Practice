@@ -95,5 +95,5 @@ interface Task {
   name: string;
   taskStatus: TaskStatus;
 }
-type TaskStatus = 'completed' | 'pending' | 'all';  
+type TaskStatus = 'completed' | 'pending' | 'all';
 
